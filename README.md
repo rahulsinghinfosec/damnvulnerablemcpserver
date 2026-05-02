@@ -1,5 +1,3 @@
-<<<<<<< HEAD
-# damnvulnerablemcpserver
 Damn Vulnerable MCP Server
 =======
 # Vulnerable MCP Server
