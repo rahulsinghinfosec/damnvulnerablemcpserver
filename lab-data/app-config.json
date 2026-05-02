@@ -1,0 +1,5 @@
+{
+  "debug": true,
+  "database": "/data/vulnerable_mcp.sqlite",
+  "api_key": "training_config_api_key_please_do_not_reuse"
+}
