@@ -2,7 +2,7 @@ Damn Vulnerable MCP Server
 =======
 # Vulnerable MCP Server
 
-> **WARNING: DO NOT deploy publicly. DO NOT use in production. FOR EDUCATIONAL PURPOSES ONLY.**
+> **WARNING: DO NOT deploy publicly. DO NOT use in production. FOR EDUCATIONAL PURPOSES ONLY. Vibe Coded. Therefore, might have more security issues than expected.**
 
 Vulnerable MCP Server is a deliberately insecure Python MCP server for local labs, security training, and demonstrations of common vulnerabilities in MCP servers and AI-integrated services.
 
