@@ -15,7 +15,7 @@ It supports:
 
 The code is intentionally beginner friendly. Each vulnerability lives in its own module under `vulnerable_mcp/tools/`.
 
-## Quick Start
+## Quick Start (Recommended)
 
 ```bash
 docker compose up --build
@@ -39,6 +39,7 @@ python -m vulnerable_mcp.server --transport stdio
 For local Streamable HTTP without Docker:
 
 ```bash
+python -m venv .venv
 . .venv/bin/activate
 uvicorn vulnerable_mcp.http_app:app --host 0.0.0.0 --port 8000 --log-level debug
 ```
@@ -46,6 +47,7 @@ uvicorn vulnerable_mcp.http_app:app --host 0.0.0.0 --port 8000 --log-level debug
 For local SSE:
 
 ```bash
+python -m venv .venv
 . .venv/bin/activate
 python -m vulnerable_mcp.server --transport sse
 ```
