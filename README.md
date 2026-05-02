@@ -15,6 +15,8 @@ It supports:
 
 The code is intentionally beginner friendly. Each vulnerability lives in its own module under `vulnerable_mcp/tools/`.
 
+Video Soution - (https://youtu.be/kZnojNOeFBU)[https://youtu.be/kZnojNOeFBU] 
+
 ## Quick Start (Recommended)
 
 ```bash
