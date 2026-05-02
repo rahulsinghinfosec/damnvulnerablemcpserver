@@ -1,0 +1,27 @@
+services:
+  vulnerable-mcp:
+    build: .
+    container_name: vulnerable-mcp-server
+    environment:
+      APP_ENV: training
+      DEBUG: "true"
+      LOG_LEVEL: DEBUG
+      MCP_HOST: 0.0.0.0
+      MCP_PORT: "8000"
+      MCP_TRANSPORT: streamable-http
+      DATABASE_PATH: /data/vulnerable_mcp.sqlite
+      TRAINING_SECRET: compose_secret_visible_to_system_info
+    ports:
+      - "8000:8000"
+    volumes:
+      # VULNERABILITY: writable mounted volumes give the file tools a larger
+      # blast radius. Keep these mounts local to training labs only.
+      - ./lab-data:/lab-data:rw
+      - ./secrets:/app/secrets:rw
+      - vulnerable-mcp-db:/data:rw
+    privileged: false
+    user: "0:0"
+    read_only: false
+
+volumes:
+  vulnerable-mcp-db:
